@@ -13,7 +13,10 @@ provider "aws" {
         #profile = "default"
 	}
 
-resource "aws_instance" "sush" {
+resource "aws_instance" "sushma" {
 	ami = "ami-0c2b8ca1dad447f8a" 
-	instance_type = "t2.micro"
+	instance_type = "t2.nano"
+	tags = {
+		"name" = "code"
+	}
 }
