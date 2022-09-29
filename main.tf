@@ -15,8 +15,8 @@ provider "aws" {
 
 resource "aws_instance" "sushma" {
 	ami = "ami-0c2b8ca1dad447f8a" 
-	instance_type = "t2.nano"
+	instance_type = "t2.micro"
 	tags = {
-		"name" = "newcode"
+		"name" = "necode"
 	}
 }
